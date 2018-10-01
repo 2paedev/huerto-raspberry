@@ -1,9 +1,12 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
-/* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Raspberry Pi GPIO Simple-GUI' });
+  res.render('gpio', { title: 'Pines GPIO' });
+});
+
+router.get('/camera', function(req, res, next) {
+  res.render('camera', { title: 'Cam view' });
 });
 
 module.exports = router;

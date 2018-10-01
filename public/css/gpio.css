@@ -1,0 +1,15 @@
+.gpio-container {
+  background-color: #5f8645;
+  width: 80%;
+  padding: 50px;
+  color: #e9e5d2;
+}
+
+.gpio-container .row {
+  height: 50px;
+}
+
+.gpio-container .col {
+  padding: 10px;
+  border: 1px solid #e9e5d2;
+}

@@ -6,7 +6,7 @@ Proyecto personal para controlar/automatizar el riego automático totalmente mon
 
 Para llevar a cabo el proyecto se necesita el siguiente hardware y software:
 
-### Hardware
+### Prerrequisitos Hardware
 
 - Raspberry 2 Model B
 - Teclado y ratón USB
@@ -16,14 +16,18 @@ Para llevar a cabo el proyecto se necesita el siguiente hardware y software:
 - Protoboard
 - Soldador y estanio
 
-### Software
+### Prerrequisitos Software
 
 - Raspbian
 - VNCServer
 - Cuenta en remote.it
 - NodeJS
-- Express
-- Bootstrap
+- Editor (VSCode)
+
+### Others
+
+- VSCode (ESLint) (https://travishorn.com/setting-up-eslint-on-vs-code-with-airbnb-javascript-style-guide-6eb78a535ba6)
+- Guía de estilos JS de Airbnb (https://github.com/airbnb/javascript)
 
 ## Puesta en marcha...
 
@@ -63,52 +67,49 @@ En esta sección se instala y configura un servidor Web NodeJS, el cuál será a
 - Copiar comando o url que nos dice y ya tendríamos acceso a nuestra Raspberry
 ```
 
-### Break down into end to end tests
+### Instalación y configuración
 
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
+Con el siguiente comando, instalamos todas las librerías necesarias:
 
 ```
-Give an example
+npm install
 ```
 
-## Deployment
+Entre los paquetes que se instalan están:
 
-Add additional notes about how to deploy this on a live system
+- Express
+- Bootstrap
+- Pug
+- Rpio
+- ESLint + Airbnb
+- Node Sass
 
-## Built With
+### Guía de estilos JS
 
-- [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-- [Maven](https://maven.apache.org/) - Dependency Management
-- [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+Para mantener un código lo suficiente robusto se ha seguido la guía de estilos que ofrece Airbnb para Javascript.
 
-## Contributing
+- [Guía estilos Airbnb JS](https://github.com/airbnb/javascript)
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Con VSCode es posible configurar Prettier + ESLint + Airbnb, de manera que auto-formatea el código siguiendo las pautas de la guía de estilos comentada previamente. Para la configuración se puede seguir los siguiente enlaces:
 
-## Versioning
+- [Configuracion ESLint 1](https://travishorn.com/setting-up-eslint-on-vs-code-with-airbnb-javascript-style-guide-6eb78a535ba6)
+- [Configuracion ESLint 2](https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a)
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+### Configuración de Sass
 
-## Authors
+Antes de usar Sass como lenguaje de hoja de estilos, hay que configurarlo en el proyecto. para ello se han seguido los siguientes enlaces:
 
-- **Billie Thompson** - _Initial work_ - [PurpleBooth](https://github.com/PurpleBooth)
+- [Configuracion Sass](https://github.com/sass/node-sass-middleware)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+Los ficheros de configuración se encuentran en la raíz del proyecto:
+
+- .eslintrc.json
+- .prettierrc
+
+## Autor
+
+- **Diego M. Martínez** - [2PaeDev](https://github.com/2PaeDev)
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+Este proyecto tiene licencia MIT - mirar el archivo [LICENSE.md](LICENSE.md) para los detalles.
