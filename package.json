@@ -16,7 +16,8 @@
     "popper.js": "^1.14.4",
     "pug": "^2.0.3",
     "rpio": "^0.9.12",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "~2.3.0",
+    "socket.io": "^2.1.1"
   },
   "devDependencies": {
     "eslint": "^5.6.1",

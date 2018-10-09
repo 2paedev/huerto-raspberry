@@ -1,8 +1,14 @@
 extends layout
 
 block content
-    script(type='text/javascript' src='/scripts/camera.js')
-    section.container.cam-container
-        h1 CAM VIEW
+  script(type='text/javascript' src='/scripts/camera.js')
+  section.container.cam-container
+    h1 CAM VIEW
 
-        button.button-go-back Go back
+    button.button-go-back Go back
+
+    div.row
+      button(type='button' id='' class="button-camera") Start camera
+
+    div.row
+      img(src="" id="stream")
