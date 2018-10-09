@@ -23,6 +23,7 @@ app.use(cookieParser());
 app.use('/vendor', express.static(path.join(__dirname, 'node_modules')));
 app.use('/scripts', express.static(path.join(__dirname, 'public', 'js')));
 app.use('/css', express.static(path.join(__dirname, 'public', 'css')));
+app.use('/stream', express.static(path.join(__dirname, 'stream')));
 
 app.use('/', routes);
 app.post('/ajax', ajaxRoute);
