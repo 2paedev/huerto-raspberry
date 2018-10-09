@@ -5,7 +5,8 @@ $(function() {
 
   var socket = io();
 
-  $('button-camera').click(function() {
+  $('.button-camera').click(function() {
+    console.log('camerraaaaA');
     socket.emit('start-stream');
     $('.button-camera').hide();
   });

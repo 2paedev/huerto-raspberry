@@ -10,9 +10,6 @@ const app = express();
 const port = 80;
 const routes = require('./routes');
 const ajaxRoute = require('./routes/ajax');
-const sockets = {};
-const http = require('http').Server(app);
-const io = require('socket.io')(http);
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
@@ -29,6 +26,39 @@ app.use('/css', express.static(path.join(__dirname, 'public', 'css')));
 
 app.use('/', routes);
 app.post('/ajax', ajaxRoute);
+
+// catch 404 and forward to error handler
+app.use((req, res, next) => {
+  const err = new Error('Not Found');
+  err.status = 404;
+  next(err);
+});
+
+// development error handler will print stacktrace
+if (app.get('env') === 'development') {
+  app.use((err, req, res) => {
+    res.status(err.status || 500);
+    res.render('error', {
+      message: err.message,
+      error: err
+    });
+  });
+}
+
+// production error handler no stacktraces leaked to user
+app.use((err, req, res) => {
+  res.status(err.status || 500);
+  res.render('error', {
+    message: err.message,
+    error: {}
+  });
+});
+
+const server = app.listen(port);
+const io = require('socket.io').listen(server);
+var spawn = require('child_process').spawn;
+var proc;
+var sockets = {};
 
 io.on('connection', function(socket) {
   sockets[socket.id] = socket;
@@ -87,32 +117,4 @@ function startStreaming(io) {
   });
 }
 
-// catch 404 and forward to error handler
-app.use((req, res, next) => {
-  const err = new Error('Not Found');
-  err.status = 404;
-  next(err);
-});
-
-// development error handler will print stacktrace
-if (app.get('env') === 'development') {
-  app.use((err, req, res) => {
-    res.status(err.status || 500);
-    res.render('error', {
-      message: err.message,
-      error: err
-    });
-  });
-}
-
-// production error handler no stacktraces leaked to user
-app.use((err, req, res) => {
-  res.status(err.status || 500);
-  res.render('error', {
-    message: err.message,
-    error: {}
-  });
-});
-
-app.listen(port);
 module.exports = app;
