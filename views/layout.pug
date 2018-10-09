@@ -11,6 +11,16 @@ html
     script(type='text/javascript' src='/vendor/popper.js/dist/umd/popper.min.js')
     script(type='text/javascript' src='/vendor/socket.io-client/dist/socket.io.js')
     script(type='text/javascript' src='/vendor/bootstrap/dist/js/bootstrap.min.js')
+    script.
+      var socket = io();
+      socket.on('liveStream', function(url) {
+      $('#stream').attr('src', url);
+      $('.start').hide();
+      });
+      function startStream() {
+      socket.emit('start-stream');
+      $('.start').hide();
+      }
     
   body
     block content

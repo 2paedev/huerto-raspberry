@@ -90,6 +90,7 @@ function stopStreaming() {
 }
 
 function startStreaming(io) {
+  console.log('Entra en startStreaming');
   if (app.get('watchingFile')) {
     io.sockets.emit('liveStream', 'image_stream.jpg?_t=' + Math.random() * 100000);
     return;

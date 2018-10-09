@@ -12,6 +12,9 @@ $(function() {
   });
 
   socket.on('liveStream', function(url) {
+    console.log('Entra liveStream');
+    debugger;
+    console.log(url);
     $('#stream').attr('src', url);
     $('.button-camera').hide();
   });

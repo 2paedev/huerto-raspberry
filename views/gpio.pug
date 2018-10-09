@@ -2,7 +2,12 @@ extends layout
 
 block content
     script(type='text/javascript' src='/scripts/gpio.js')
+
     section.container.gpio-container
+
+        button.btn.btn-info.start(type='button', id='', onclick='startStream()') Start Camera
+        .row
+        img#stream(src='')
 
         div.row
             h1 PINES GPIO
