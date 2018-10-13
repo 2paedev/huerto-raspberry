@@ -1,5 +1,7 @@
 $(function() {
-  $('.button-go-back').click(function() {
+  const buttonGoBack = $('.button-go-back');
+
+  buttonGoBack.click(function() {
     window.location.href = '/';
   });
 });

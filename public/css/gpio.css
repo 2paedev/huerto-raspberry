@@ -12,4 +12,6 @@
 .gpio-container .col {
   padding: 10px;
   border: 1px solid #e9e5d2;
+  height: 53px;
+  min-height: 53px;
 }

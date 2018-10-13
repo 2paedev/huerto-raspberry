@@ -16,88 +16,122 @@ block content
         div.row.align-items-center
             div.col
                 span GPIO 2 (SDA)
-                div.float-right
-                    input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="2").gpio-checkbox
+                div.float-right.btn-group-toggle(data-toggle='buttons')
+                    label.btn.btn-danger.btn-sm
+                        input#gpio2.gpio-checkbox(type='checkbox' checked='' autocomplete='off' data-gpio="2")
+                        label(for='gpio2') Disabled
             div.col
                 span.float-right  5V
         div.row.align-items-center
             div.col
                 span GPIO 3 (SCL)
-                div.float-right
-                    input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="3").gpio-checkbox
+                div.float-right.btn-group-toggle(data-toggle='buttons')
+                    label.btn.btn-danger.btn-sm
+                        input#gpio3.gpio-checkbox(type='checkbox' checked='' autocomplete='off' data-gpio="3")
+                        label(for='gpio3') Disabled
             div.col
                 span.float-right Ground
         div.row.align-items-center
             div.col
                 span GPIO 4 (GPCLK0)
-                div.float-right
-                    input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="4").gpio-checkbox
-            div.col
-                input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="14").gpio-checkbox
+                div.float-right.btn-group-toggle(data-toggle='buttons')
+                    label.btn.btn-danger.btn-sm
+                        input#gpio4.gpio-checkbox(type='checkbox' checked='' autocomplete='off' data-gpio="4")
+                        label(for='gpio4') Disabled
+            div.col.btn-group-toggle(data-toggle='buttons')
+                label.btn.btn-danger.btn-sm
+                    input#gpio14.gpio-checkbox(type='checkbox' checked='' autocomplete='off' data-gpio="14")
+                    label(for='gpio14') Disabled
                 span.float-right GPIO 14 (TXD)
         div.row.align-items-center
             div.col
                 span Ground
-            div.col
-                input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="15").gpio-checkbox
+            div.col.btn-group-toggle(data-toggle='buttons')
+                label.btn.btn-danger.btn-sm
+                    input#gpio15.gpio-checkbox(type='checkbox' checked='' autocomplete='off' data-gpio="15")
+                    label(for='gpio15') Disabled
                 span.float-right GPIO 15 (RXD)
         div.row.align-items-center
             div.col
                 span GPIO 17
-                div.float-right
-                    input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="17").gpio-checkbox
-            div.col
-                input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="18").gpio-checkbox
+                div.float-right.btn-group-toggle(data-toggle='buttons')
+                    label.btn.btn-danger.btn-sm
+                        input#gpio17.gpio-checkbox(type='checkbox' checked='' autocomplete='off' data-gpio="17")
+                        label(for='gpio17') Disabled
+            div.col.btn-group-toggle(data-toggle='buttons')
+                label.btn.btn-danger.btn-sm
+                    input#gpio18.gpio-checkbox(type='checkbox' checked='' autocomplete='off' data-gpio="18")
+                    label(for='gpio18') Disabled
                 span.float-right GPIO 18 (PCM_C)
         div.row.align-items-center
             div.col
                 span GPIO 27 (PCM_D)
-                div.float-right
-                    input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="27").gpio-checkbox
+                div.float-right.btn-group-toggle(data-toggle='buttons')
+                    label.btn.btn-danger.btn-sm
+                        input#gpio27.gpio-checkbox(type='checkbox' checked='' autocomplete='off' data-gpio="27")
+                        label(for='gpio27') Disabled
             div.col
                 span.float-right Ground
         div.row.align-items-center
             div.col
                 span GPIO 22
-                div.float-right
-                    input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="22").gpio-checkbox
-            div.col
-                input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="23").gpio-checkbox
+                div.float-right.btn-group-toggle(data-toggle='buttons')
+                    label.btn.btn-danger.btn-sm
+                        input#gpio22.gpio-checkbox(type='checkbox' checked='' autocomplete='off' data-gpio="22")
+                        label(for='gpio22') Disabled
+            div.col.btn-group-toggle(data-toggle='buttons')
+                label.btn.btn-danger.btn-sm
+                    input#gpio23.gpio-checkbox(type='checkbox' checked='' autocomplete='off' data-gpio="23")
+                    label(for='gpio23') Disabled
                 span.float-right GPIO 23
         div.row.align-items-center
             div.col
                 span 3.3V
-            div.col
-                input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="24").gpio-checkbox
+            div.col.btn-group-toggle(data-toggle='buttons')
+                label.btn.btn-danger.btn-sm
+                    input#gpio24.gpio-checkbox(type='checkbox' checked='' autocomplete='off' data-gpio="24")
+                    label(for='gpio24') Disabled
                 span.float-right GPIO 24
         div.row.align-items-center
             div.col
                 span GPIO 10 (MOSI)
-                div.float-right
-                    input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="10").gpio-checkbox
+                div.float-right.btn-group-toggle(data-toggle='buttons')
+                    label.btn.btn-danger.btn-sm
+                        input#gpio10.gpio-checkbox(type='checkbox' checked='' autocomplete='off' data-gpio="10")
+                        label(for='gpio10') Disabled
             div.col
                 span.float-right Ground
         div.row.align-items-center
             div.col
                 span GPIO 9 (MISO)
-                div.float-right
-                    input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="9").gpio-checkbox
-            div.col
-                input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="25").gpio-checkbox
+                div.float-right.btn-group-toggle(data-toggle='buttons')
+                    label.btn.btn-danger.btn-sm
+                        input#gpio9.gpio-checkbox(type='checkbox' checked='' autocomplete='off' data-gpio="9")
+                        label(for='gpio9') Disabled
+            div.col.btn-group-toggle(data-toggle='buttons')
+                label.btn.btn-danger.btn-sm
+                    input#gpio25.gpio-checkbox(type='checkbox' checked='' autocomplete='off' data-gpio="25")
+                    label(for='gpio25') Disabled
                 span.float-right GPIO 25
         div.row.align-items-center
             div.col
                 span GPIO 11 (SCKL)
-                div.float-right
-                    input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="11").gpio-checkbox
-            div.col
-                input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="8").gpio-checkbox
+                div.float-right.btn-group-toggle(data-toggle='buttons')
+                    label.btn.btn-danger.btn-sm
+                        input#gpio11.gpio-checkbox(type='checkbox' checked='' autocomplete='off' data-gpio="11")
+                        label(for='gpio11') Disabled
+            div.col.btn-group-toggle(data-toggle='buttons')
+                label.btn.btn-danger.btn-sm
+                    input#gpio8.gpio-checkbox(type='checkbox' checked='' autocomplete='off' data-gpio="8")
+                    label(for='gpio8') Disabled
                 span.float-right GPIO 8 (CE0)
         div.row.align-items-center
             div.col
                 span Ground
-            div.col
-                input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="7").gpio-checkbox
+            div.col.btn-group-toggle(data-toggle='buttons')
+                label.btn.btn-danger.btn-sm
+                    input#gpio7.gpio-checkbox(type='checkbox' checked='' autocomplete='off' data-gpio="7")
+                    label(for='gpio7') Disabled
                 span.float-right GPIO 7 (CE1)
         div.row.align-items-center
             div.col
@@ -107,45 +141,63 @@ block content
         div.row.align-items-center
             div.col
                 span GPIO 5
-                div.float-right
-                    input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="5").gpio-checkbox
+                div.float-right.btn-group-toggle(data-toggle='buttons')
+                    label.btn.btn-danger.btn-sm
+                        input#gpio5.gpio-checkbox(type='checkbox' checked='' autocomplete='off' data-gpio="5")
+                        label(for='gpio5') Disabled
             div.col
                 span.float-right Ground
         div.row.align-items-center
             div.col
                 span GPIO 6
-                div.float-right
-                    input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="6").gpio-checkbox
-            div.col
-                input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="12").gpio-checkbox
+                div.float-right.btn-group-toggle(data-toggle='buttons')
+                    label.btn.btn-danger.btn-sm
+                        input#gpio6.gpio-checkbox(type='checkbox' checked='' autocomplete='off' data-gpio="6")
+                        label(for='gpio6') Disabled
+            div.col.btn-group-toggle(data-toggle='buttons')
+                label.btn.btn-danger.btn-sm
+                    input#gpio12.gpio-checkbox(type='checkbox' checked='' autocomplete='off' data-gpio="12")
+                    label(for='gpio12') Disabled
                 span.float-right GPIO 12
         div.row.align-items-center
             div.col
                 span GPIO 13
-                div.float-right
-                    input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="13").gpio-checkbox
+                div.float-right.btn-group-toggle(data-toggle='buttons')
+                    label.btn.btn-danger.btn-sm
+                        input#gpio13.gpio-checkbox(type='checkbox' checked='' autocomplete='off' data-gpio="13")
+                        label(for='gpio13') Disabled
             div.col
                 span.float-right Ground
         div.row.align-items-center
             div.col
                 span GPIO 19 (MISO)
-                div.float-right
-                    input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="19").gpio-checkbox
-            div.col
-                input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="16").gpio-checkbox
+                div.float-right.btn-group-toggle(data-toggle='buttons')
+                    label.btn.btn-danger.btn-sm
+                        input#gpio19.gpio-checkbox(type='checkbox' checked='' autocomplete='off' data-gpio="19")
+                        label(for='gpio19') Disabled
+            div.col.btn-group-toggle(data-toggle='buttons')
+                label.btn.btn-danger.btn-sm
+                    input#gpio16.gpio-checkbox(type='checkbox' checked='' autocomplete='off' data-gpio="16")
+                    label(for='gpio16') Disabled
                 span.float-right GPIO 16
         div.row.align-items-center
             div.col
                 span GPIO 26
-                div.float-right
-                    input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="26").gpio-checkbox
-            div.col
-                input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="20").gpio-checkbox
+                div.float-right.btn-group-toggle(data-toggle='buttons')
+                    label.btn.btn-danger.btn-sm
+                        input#gpio26.gpio-checkbox(type='checkbox' checked='' autocomplete='off' data-gpio="26")
+                        label(for='gpio26') Disabled
+            div.col.btn-group-toggle(data-toggle='buttons')
+                label.btn.btn-danger.btn-sm
+                    input#gpio20.gpio-checkbox(type='checkbox' checked='' autocomplete='off' data-gpio="20")
+                    label(for='gpio20') Disabled
                 span.float-right GPIO 20 (MOSI)
         div.row.align-items-center
             div.col
                 span Ground
-            div.col
-                input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="21").gpio-checkbox
+            div.col.btn-group-toggle(data-toggle='buttons')
+                label.btn.btn-danger.btn-sm
+                    input#gpio21.gpio-checkbox(type='checkbox' checked='' autocomplete='off' data-gpio="21")
+                    label(for='gpio21') Disabled
                 span.float-right GPIO 21 (SCKL)
             
